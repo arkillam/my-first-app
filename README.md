@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Andrew's Notes (things I did after creating the app using CLI)
+
+Added FormsModule:
+ - added to app.module.ts:
+    import { FormsModule } from '@angular/forms';
+    added FormsModule to imports list
+ - added to app.components.ts:
+    name = 'Andrew';
+ - added to app.component.html:
+    <input type="text" [(ngModel)]="name">
+    <p>{{ name }}</p>
+
+Added Bootstrap:
+ - command line, ran command "npm install --save bootstrap@4"
+ - edited angular.json, added "node_modules/bootstrap/dist/css/bootstrap.min.css" to styles
